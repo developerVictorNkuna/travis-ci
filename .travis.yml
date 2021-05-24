@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.9"
+  - "nightly"  #latest version of python available
+install:
+  - "pip install pytest"
+  - "pip install -r requirements.txt" #it will install all dependencies
+script: python -m pytest tests/
+#launching a python command using pytest test runner it run nice with travis-ci
